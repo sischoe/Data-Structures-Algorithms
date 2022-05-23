@@ -10,7 +10,7 @@ class BankAccount {
 
 public:
   igorBank(int num): id{num} {}
-  igorBank(igor&& a){
+  igorBank(igorBank&& a){
       id = a.id;
       balance = a.balance;
   };
