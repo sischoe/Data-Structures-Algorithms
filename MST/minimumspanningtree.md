@@ -67,3 +67,82 @@ maximalen Kantengewicht finden, können wir einfach alle Kanten negieren
 
 # Implementierung
 
+Wenn Sie Ihren Code ausführen (▶), wird auf der Registerkarte "Dateien" ein Diagramm Ihres minimalen Spannbaums angezeigt. Dieser wird mit einem kleinen Python-Skript erstellt, das nach der Ausführung des C++-Programms ausgeführt wird. Wir verwenden Dateien, um Informationen von C++ an Python zu übergeben.
+Sie müssen eine Union-Find-Datenstruktur implementieren, um Kruskal zu implementieren. Implementieren Sie eine der im Unterricht gezeigten Optimierungen, da es sonst bei großen Datensätzen zu einem Timeout kommt.
+Da die verwendeten Knoten-IDs nicht unbedingt zusammenhängend sind, sollten Sie statt eines Arrays in Union-Find eine std::map oder eine std::unordered_map verwenden. In der Tat ist std::unordered_map schneller und kann erforderlich sein, um alle Testfälle zu lösen.
+Für das Sortieren von Kanten nach ihrem Gewicht sollten Sie std::sort verwenden. Erinnern Sie sich an die Verwendung von Lambda-Ausdrücken, um nach einem Kriterium zu sortieren (vgl. Folie 420 im Foliensatz 10).
+
+
+```
+#include <iostream>
+#include "graph.h"
+
+class UnionFind {
+  public:
+    void MakeSet(NodeP n){
+      parent[n] = n;
+      depth[n] = 0;
+    }
+    
+    NodeP Find(NodeP n){
+      while (parent[n] != n){
+        n = parent[n];
+      }
+      return n;
+    }
+    
+    bool Union(NodeP l, NodeP r){
+      l = Find(l);
+      r = Find(r);
+      if (l == r){
+        return false;
+      } else {
+        if (depth[l] < depth[r]){
+          std::swap(l,r);
+        }
+        parent[r] = l;
+        if (depth[l] == depth[r]){
+          depth[l]++;
+        }
+        return true;
+      }
+    }
+
+  private:
+    std::unordered_map<NodeP,NodeP> parent;
+    std::unordered_map<NodeP,unsigned> depth;
+};
+
+
+std::vector<Edge> Graph::Kruskal(){
+  std::vector<Edge> result;
+  std::cout << "sorting edges" << std::endl; 
+  std::sort(edges.begin(),edges.end(),[](const Edge& l, const Edge& r) {return l.length < r.length;});
+
+  std::cout << "creating uf" << std::endl; 
+  UnionFind uf;
+  for (auto n: nodes){
+    uf.MakeSet(n);
+  }
+  std::cout << "adding edges" << std::endl; 
+  for (const auto& e: edges){
+    if (uf.Union(e.source, e.target)){
+      result.push_back(e);
+    }
+  }
+  return result;
+}
+  
+  ```
+Alle Kanten des Graphen speichern O(m)
+Union Find Struktur für jeden Knoten O(n)
+Gesamtspeicher O(n+m)
+Alle Kanten sortieren O(m \cdot log(m))
+Einmal durch alle Kanten und entscheiden ob Teil des MST
+O(m*acrama) ~ O(m)
+Gesmatlaufzeit O(m \cdot log(m))
+
+
+
+
+
