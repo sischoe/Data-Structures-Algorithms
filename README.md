@@ -11,8 +11,9 @@ Verständnis für die Analyse und den Entwurf grundlegender und gängiger Algori
 Ringvorlesung 252-0856 Informatik oder gleichwertige Kenntnisse in der Programmierung mit C++.
 
 
-##Übung 1:
-  Große O-Notation
+## Übung 1:
+
+Große O-Notation
  
 Asymptotisches Wachstum
  
@@ -152,6 +153,111 @@ Rennbedingungen
 Barriere
 
 Brücke
+
+# Code Beispiel: 
+
+Sandbox
+ 
+Sandbox Task For Your Experiments
+
+Lecture01: Sorting Runtimes
+
+Sorting Runtimes (Wallclock Time)
+
+Sorting Runtimes (CPU Time)
+
+Lecture02: algorithm examples
+
+maximum subarray problem
+
+Karatsuba
+
+Lecture03: tools, rule of three/five, iterators
+Open
+useful tools
+rule of three
+iterators
+rule of five
+vector movement
+Lecture04: templates
+Open
+classes (pair)
+functions
+containers (findmin)
+fancy (apply functions)
+self-made shared pointer
+smart pointers
+type traits
+type inference (C++17 vs C++14)
+simple template metaprogramming
+Exercise class 02: Subarray Sum Problem
+Open
+Subarray Sum Problem
+Lecture 06: sorting
+Open
+Improving Sorting Reprise
+Exercise class 04: Dynamically sized array
+Open
+Dynamically sized array
+Lecture 10: Functors and Lambdas
+Open
+Filters
+Sorting Comparators
+Simple Lambda Examples
+Sums and For-Each
+Captures
+Functional
+Function smoothing
+Exercise class 06: Binary Trees
+Open
+Binary Tree
+Augmenting a Binary Search Tree
+Lecture 13: DP
+Open
+Fibonacci
+Rod-Cutting
+Rabbits
+Exercise class 07: Dynamic Programming
+Open
+Longest Ascending Sequence
+Exercise class 08/09: DP
+Open
+Optimal Search Trees
+Lecture 17: Computational Geometry
+Open
+Intersect Two Lines
+Check if Segments Intersect
+Enumerate all Segment Intersections
+Exercise class 10: Graphs and Shortest Paths
+Open
+BFS on a Tree
+Lazy Deletion
+Exercise class 11: Minimum Spanning Trees
+Open
+Union Find Experiments
+code examples PP I
+Open
+Concurrent Hello World
+Parallel Fibonacci (with Threads)
+Parallel Fibonacci (with Futures)
+Parallel Sum
+Parallel Scalar Product
+Pow8 on a vector
+code examples PP II
+Open
+Bank Account Unsynchronized
+Bank Account Synchronized (I)
+Counter
+Bank Account Synchronized (II) and Deadlocks
+Producer Consumer Pattern
+code examples PP III
+Open
+Self-made Future
+Using Futures
+Spinlock
+Lock free stack 
+
+
 
 ## Uebung 1: 
   Big O Notation
