@@ -1,12 +1,14 @@
 # Datenstrukturen und Algorithmen
 
 Course at D-MATH (CSE) of ETH Zürich, Spring Semester 2022, Felix Friedrich
+
 Marked in **bold** are the harder problems (in my optinion).
 
-| Week | Topic | Problem of the Week | Problem 1 | Problem 2 | Problem 3 | Problem 4 |
-| ---- | ----- | ------------------- | --------- | --------- | --------- | --------- |
-| 1 | partial sums, sliding window | | [Build the Sum](01/build-the-sum) | [Dominoes](01/dominoes) | [Even Pairs](01/even-pairs) | [**Even Matrices**](01/even-matrices) |
-| 2 | dynamic programming | [Deck of Cards](potw/02-deck-of-cards) | [Beach Bars](02/beach-bars) | [Burning Coins](02/burning-coins) | [**The Great Game**](02/the-great-game) | [**Defensive Line**](02/defensive-line) |
+| Week | Topic | Problem of the Week | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Problem 5 |
+| ---- | ----- | ------------------- | --------- | --------- | --------- | --------- | --------- |
+| 1 | Overview, Algorithms and Data Structures, Efficiency of Algorithms, Random Access Machine Model, Function Growth, Asymptotics [Cormen et al, Kap. 2.2,3,4.2-4.4 | Ottman/Widmayer, Kap. 1.1]  | [Big O Notation](01/build-the-sum) | [Asymptotic Growth](01/dominoes) | [The Set Theta(g)](01/even-pairs) | [*Code Snippets Running Times**](01/even-matrices) | [Some Proofs, Prefix Sum in 2D]()
+
+| 2 | Correctness and Efficiency of Algorithms by Example: Ancient Egyptian Multiplication, Fast Integer Multiplication, [Ottman/Widmayer, Kap. 1.2.3] Algorithm Design – Maximum Subarray Problem [Ottman/Widmayer, Kap. 1.3], Divide and Conquer [Ottman/Widmayer, Kap. 1.2.2. S.9; Cormen et al, Kap. 4-4.1] | [Deck of Cards](potw/02-deck-of-cards) | [Beach Bars](02/beach-bars) | [Burning Coins](02/burning-coins) | [**The Great Game**](02/the-great-game) | [**Defensive Line**](02/defensive-line) |
 | 3 | geometry | [From Russia with Love](potw/03-from-russia-with-love) | [Hit](03/hit) | [First Hit](03/first-hit) | [Antenna](03/antenna) | [**Hiking Maps**](03/hiking-maps) |
 | 4 | graphs | [**Fighting Pits of Mereen**](potw/04-fighting-pits-of-mereen) | [First Steps with BGL](04/first-steps-with-bgl) | [Ant Challenge](04/ant-challenge) | [**Buddy Selection**](04/buddy-selection) | [Important Bridges](04/important-bridges) |
 | 5 | greedy, split & list | [**Motorcycles**](potw/05-motorcycles) | [Boats](05/boats) | [Moving Books](05/moving-books) | [**Severus Snape**](05/severus-snape) | [**Asterix the Gaul**](05/asterix-the-gaul) |
