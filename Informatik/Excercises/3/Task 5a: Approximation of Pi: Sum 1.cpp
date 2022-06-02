@@ -1,7 +1,8 @@
 #include <iostream>
 
 int main() {
-    // input m
+    // input m: 
+    // \frac{\pi}{4} = \sum\limits_{0\le n}{\frac{(-1)^n}{2n+1}} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \ldots
     unsigned int m;
     std::cin >> m;
 
