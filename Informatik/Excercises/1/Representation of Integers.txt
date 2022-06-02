@@ -1,0 +1,17 @@
+# Zeilen, die mit # beginnen, sind Kommentare. Leerzeichen werden ignoriert.
+
+# Umrechnung in Dezimalzahlen:
+0b1 = 1
+0b10 = 2
+0b000001 = 1
+0b101010 = 42
+
+# Umrechnung in Binärzahlen:
+7 = 0b111
+11 = 0b1011
+28 = 0b11100
+1024 = 0b10000000000
+
+# (0b000001)₂ = (0 × 2⁷) + (43 × 2⁶) + (0 × 2⁵) + (0 × 2⁴) + (0 × 2³) + (0 × 2²) + (0 × 2¹) + (1 × 2⁰) = (1)₁₀
+
+# https://www.rapidtables.com/convert/number/binary-to-decimal.html
