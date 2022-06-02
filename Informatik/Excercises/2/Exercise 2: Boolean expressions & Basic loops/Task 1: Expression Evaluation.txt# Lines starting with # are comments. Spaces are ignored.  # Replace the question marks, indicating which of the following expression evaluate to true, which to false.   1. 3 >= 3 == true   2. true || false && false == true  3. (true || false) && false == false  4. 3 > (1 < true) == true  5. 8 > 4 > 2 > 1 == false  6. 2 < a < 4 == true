@@ -1,0 +1,29 @@
+# Zeilen, die mit # beginnen, sind Kommentare. Leerzeichen werden ignoriert.
+
+# Ersetzen Sie die Fragezeichen, die angeben, welcher der folgenden Ausdrücke als wahr und welcher als falsch ausgewertet wird.
+
+
+1. 3 >= 3 == wahr
+
+2. wahr || falsch && falsch == wahr
+
+# Erläuterung: Da `&&` stärker bindet als `||`, ist der gegebene Ausdruck äquivalent zu `wahr || (falsch && falsch)`. 
+# Die linke Seite des `||`-Operators wird aufgrund der Kurzschlussauswertung zuerst ausgewertet. 
+# Da die linke Seite zu "wahr" ausgewertet wird, wird die rechte Seite überhaupt nicht ausgewertet.
+
+3. (wahr || falsch) && falsch == falsch 
+
+# Erläuterung: Weil jetzt `true || false` zuerst ausgewertet wird, zu `true`. wahr && falsch` ist `falsch`.
+
+4. 3 > (1 < wahr) == wahr 
+
+# Erklärung: Weil `(1 < wahr)` ist `falsch` und `(3 > falsch)` ist `wahr`, weil `falsch` gleich `0` ist.
+
+5. 8 > 4 > 2 > 1 == falsch
+
+# Erklärung: `falsch`, weil `8 > 4` `wahr` ist, d.h. `1`, und `1 > 2` ist `falsch`, d.h. `0`, und `0 > 1` ist `falsch`. 
+# Die Auswertung erfolgt von links nach rechts, weil `>` links-assoziativ ist.
+
+6. 2 < a < 4 == wahr
+
+# Erklärung: `wahr`, weil `2 < a` entweder `wahr` oder `falsch` ist, d.h. `1` oder `0`, und beide sind kleiner als `4`. Das Ergebnis ist `wahr`.
