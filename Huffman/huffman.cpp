@@ -5,6 +5,7 @@
 #include <queue>
 #include <cassert>
 
+
 struct Node;
 using SharedNode=std::shared_ptr<Node>;
 
