@@ -12,6 +12,7 @@ Verständnis für die Analyse und den Entwurf grundlegender und gängiger Algori
 # Voraussetzungen
 Ringvorlesung 252-0856 Informatik oder gleichwertige Kenntnisse in der Programmierung mit C++.
 
+If you have publications, articles, projects, blog posts that use this environment, feel free to add a link here via a [PR](https://github.com/hardmaru/slimevolleygym/edit/master/README.md).
 
 ## Übung 1:
 
