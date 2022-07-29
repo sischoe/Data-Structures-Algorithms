@@ -262,7 +262,7 @@ Lock free stack
 
 
 ## Uebung 1: 
-  Big O Notation
+Big O Notation
  
 Asymptotic Growth
  
